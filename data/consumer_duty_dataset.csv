@@ -1,0 +1,5 @@
+product_line,active_policies,claims_submitted,claims_accepted,claims_acceptance_rate_pct,avg_settlement_days_standard,avg_settlement_days_vulnerable,complaints_count,complaints_per_1k,fair_value_score,vulnerable_satisfaction_score
+Motor Insurance,45000,3200,2880,90.0,8.5,7.2,140,3.11,8.4,8.8
+Home Insurance,38000,1900,1672,88.0,12.0,10.5,95,2.5,8.1,8.6
+Pet Insurance,22000,4100,3813,93.0,4.2,3.8,44,2.0,8.9,9.1
+Travel Insurance,15000,1200,948,79.0,15.4,14.1,82,5.47,7.2,7.5
