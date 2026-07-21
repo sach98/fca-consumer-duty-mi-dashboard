@@ -1,0 +1,5 @@
+product_line,avg_settlement_days_standard,avg_settlement_days_vulnerable,sla_gap_days,br02_breach
+Motor Insurance,8.5,7.2,1.2999999999999998,False
+Home Insurance,12.0,10.5,1.5,False
+Pet Insurance,4.2,3.8,0.40000000000000036,False
+Travel Insurance,15.4,14.1,1.3000000000000007,False

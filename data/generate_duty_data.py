@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 
@@ -57,5 +58,6 @@ data = [
 ]
 
 df = pd.DataFrame(data)
-df.to_csv('/Users/sachin/JobHunt/github-work/build/fca-consumer-duty-mi-dashboard/data/consumer_duty_dataset.csv', index=False)
+out_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'consumer_duty_dataset.csv')
+df.to_csv(out_path, index=False)
 print("Generated FCA Consumer Duty dataset successfully.")
