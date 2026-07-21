@@ -4,15 +4,20 @@ A regulatory Management Information (MI) analytics framework and business analys
 
 ---
 
-## 🏛️ Regulatory Context & Executive Summary
+## 📸 Empirical Proof of Execution & Visual Deliverables
 
-The FCA Consumer Duty requires UK insurance firms to act to deliver good outcomes for retail customers across four key areas: Products & Services, Price & Value, Consumer Understanding, and Consumer Support.
+### 1. FCA Four Outcomes Regulatory MI Dashboard
+![Consumer Duty MI Summary](outputs/consumer_duty_mi_summary.png)
 
-This project delivers:
-- **Fair Value & Outcome Analytics:** Monitoring Claims Acceptance Ratios, Complaints per 1,000 policies, and Product Fair Value Scores across Motor, Home, Pet, and Travel insurance portfolios.
-- **Vulnerable Customer SLA Tracking:** Monitoring settlement turnaround times comparing vulnerable vs. standard policyholders.
-- **Automated RAG Status Generator:** Evaluates compliance against FCA thresholds and flags product lines needing governance remediation.
-- **Formal BA Artefacts:** Complete **[Business Requirements Document (BRD)](docs/BRD.md)** detailing regulatory outcome definitions and metrics specifications.
+### 2. Automated Unit Test Verification (100% Pass)
+```bash
+python3 -m unittest discover -s tests
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+```
 
 ---
 
@@ -29,22 +34,19 @@ This project delivers:
 
 ---
 
-## 📈 MI Visualizations
-
-![Consumer Duty Summary](outputs/consumer_duty_mi_summary.png)
-
----
-
-## 🚀 How to Run
+## 🚀 How to Run & Reproduce
 
 ```bash
 git clone https://github.com/sach98/fca-consumer-duty-mi-dashboard.git
 cd fca-consumer-duty-mi-dashboard
 python3 src/generate_mi_report.py
+python3 -m unittest discover -s tests
+streamlit run app.py
 ```
 *Generates `outputs/consumer_duty_mi_summary.csv` and `outputs/consumer_duty_mi_summary.png`.*
 
 ---
 
-## 📜 Regulatory Artifacts
+## 📜 Regulatory & DAX Artifacts
 - **[docs/BRD.md](docs/BRD.md)** — FCA Consumer Duty Four Outcomes Business Requirements Document.
+- **[docs/DAX_MEASURES.md](docs/DAX_MEASURES.md)** — Power BI DAX Measure Library for Consumer Duty.
